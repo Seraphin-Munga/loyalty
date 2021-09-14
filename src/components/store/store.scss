@@ -1,0 +1,28 @@
+@import "../../assets/styling/button.scss";
+@import "../../assets/styling/input.scss";
+
+.container-store {
+  position: absolute;
+  top: 264px;
+  left: 263px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+table {
+  width: 990px;
+  height: 370px;
+}
+
+.btn-create {
+  margin-bottom: 20px;
+  @include buttonPrimary();
+}
+
+.store-input {
+  @include input();
+}

@@ -1,0 +1,16 @@
+@import "../../assets/styling/input.scss";
+@import "../../assets/styling/colors.scss";
+@import "../../assets/styling/button.scss";
+
+.container {
+  position: relative;
+  top: 24vw;
+}
+
+.login-input {
+  @include input();
+}
+
+.btn-login {
+  @include buttonPrimary();
+}

@@ -1,0 +1,21 @@
+@import "./colors.scss";
+
+@mixin buttonPrimary() {
+  width: 182px !important;
+  outline: none;
+  border: none;
+  height: 38px !important;
+  border-radius: 22px;
+  background-color: $primary-color-three;
+  color: $primary-color-two;
+  &:focus {
+    border-radius: 22px;
+    background-color: $primary-color-three;
+    color: $primary-color-two;
+  }
+  &:hover {
+    border-radius: 22px;
+    background-color: $primary-color-three;
+    color: $primary-color-two;
+  }
+}
