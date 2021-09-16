@@ -1,0 +1,13 @@
+@import "../../assets/styling/button.scss";
+
+.btn-view {
+  margin-left: 20px;
+  @include button();
+}
+
+.btn-add {
+  width: 182px;
+  left: 405px;
+  top: -57px;
+  @include button();
+}

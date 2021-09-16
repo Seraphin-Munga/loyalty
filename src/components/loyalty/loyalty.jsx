@@ -2,6 +2,8 @@ import { Table } from "antd";
 import React, { Component, useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import axiosInstance from "../../environments/api";
+import { Form, Input, Button } from "antd";
+import "../loyalty/loyalty.scss";
 
 class Loyalty extends React.Component {
   constructor(props) {
@@ -33,6 +35,20 @@ class Loyalty extends React.Component {
           <td>{data.last_name}</td>
           <td>{data.cell_number}</td>
           <td>{data.balance}</td>
+          <td>
+            <Link to={`/subscribe/${data.cell_number}`}>
+              <Button className="btn-view " type="primary">
+                Subscribe
+              </Button>
+            </Link>
+          </td>
+          <td>
+            <Link to={`/balance/${data.cell_number}/${data.id}`}>
+              <Button className="btn-view " type="primary">
+                Balance
+              </Button>
+            </Link>
+          </td>
         </tr>
       );
     });
@@ -48,6 +64,8 @@ class Loyalty extends React.Component {
               <th>Last Name</th>
               <th> Cell Number</th>
               <th>Balance</th>
+              <th>Assign Member</th>
+              <th>View Balance</th>
             </tr>
           </thead>
 

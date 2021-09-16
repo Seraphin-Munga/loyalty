@@ -12,6 +12,8 @@ import Store from "./components/store/store";
 import Create from "./components/store/create";
 import Loyalty from "./components/loyalty/loyalty";
 import Create_loyalty from "./components/loyalty/create";
+import Subscribe from "./components/loyalty/subscribe";
+import Balance from "./components/loyalty/balance";
 
 ReactDOM.render(
   <Router>
@@ -38,6 +40,14 @@ ReactDOM.render(
         </Route>
         <Route path="/create-loyalty">
           <Create_loyalty />
+          <DashboardLoyout />
+        </Route>
+        <Route path="/subscribe/:phoneNumber">
+          <Subscribe />
+          <DashboardLoyout />
+        </Route>
+        <Route path="/balance/:phoneNumber/:account_id">
+          <Balance />
           <DashboardLoyout />
         </Route>
       </Switch>

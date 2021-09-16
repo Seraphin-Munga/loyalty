@@ -19,3 +19,22 @@
     color: $primary-color-two;
   }
 }
+
+@mixin button() {
+  outline: none;
+  border: none;
+  height: 38px !important;
+  border-radius: 22px;
+  background-color: $primary-color-one;
+  color: $primary-color-two;
+  &:focus {
+    border-radius: 22px;
+    background-color: $primary-color-one;
+    color: $primary-color-two;
+  }
+  &:hover {
+    border-radius: 22px;
+    background-color: $primary-color-one;
+    color: $primary-color-two;
+  }
+}
